@@ -7,5 +7,7 @@ let btnbottom = document.querySelector(".btn-bottom");
 for (let i = 0; i < arrImg.length; i++) {
     let eleImg = document.createElement("img");
     eleImg.src = arrImg[i];
+    eleImg.classList.add("foto");
     album.append(eleImg);
+    
 }
