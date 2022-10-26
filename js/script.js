@@ -2,7 +2,7 @@ const arrImg = ["img/01.jpg", "img/02.jpg", "img/03.jpg", "img/04.jpg", "img/05.
 
 let album = document.querySelector(".container_img");
 let btnTop = document.querySelector(".btn-top");
-let btnbottom = document.querySelector(".btn-bottom");
+let btnBottom = document.querySelector(".btn-bottom");
 
 for (let i = 0; i < arrImg.length; i++) {
     let eleImg = document.createElement("img");
@@ -13,3 +13,35 @@ for (let i = 0; i < arrImg.length; i++) {
         eleImg.classList.add("next");
     }
 }
+
+
+let listAlbum = document.querySelectorAll("img");
+let nextIndex = 0;
+
+
+btnBottom.addEventListener("click", function () {
+
+    listAlbum[nextIndex].classList.remove("next")
+    nextIndex++;
+
+    listAlbum[nextIndex].classList.add("next");
+    btnTop.classList.remove("hidden");
+    if (nextIndex === listAlbum.length -1 ) {
+        btnBottom.classList.add("hidden");
+       
+    };
+
+}):
+btnBottom.addEventListener("click", function () {
+
+    listAlbum[nextIndex].classList.remove("next")
+    nextIndex++;
+
+    listAlbum[nextIndex].classList.add("next");
+    btnTop.classList.remove("hidden");
+    if (nextIndex === listAlbum.length -1 ) {
+        btnBottom.classList.add("hidden");
+       
+    }
+
+})
