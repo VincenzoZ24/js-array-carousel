@@ -31,17 +31,18 @@ btnBottom.addEventListener("click", function () {
        
     };
 
-}):
-btnBottom.addEventListener("click", function () {
+});
+
+btnTop.addEventListener("click", function () {
 
     listAlbum[nextIndex].classList.remove("next")
-    nextIndex++;
+    nextIndex--;
 
     listAlbum[nextIndex].classList.add("next");
-    btnTop.classList.remove("hidden");
+    btnBottom.classList.remove("hidden");
     if (nextIndex === listAlbum.length -1 ) {
         btnBottom.classList.add("hidden");
        
-    }
+    };
 
 })

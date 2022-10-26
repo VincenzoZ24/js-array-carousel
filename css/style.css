@@ -47,7 +47,9 @@ body {
     position: absolute;
     top:0; 
 }
-
+.hidden{
+    visibility: hidden;
+}
 .btn-bottom{
     position: absolute;
     bottom: 0;
