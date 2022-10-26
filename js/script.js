@@ -21,31 +21,35 @@ let nextIndex = 0;
 
 btnBottom.addEventListener("click", function () {
    
-
-    listAlbum[nextIndex].classList.remove("next")
+    
+    listAlbum[nextIndex].classList.remove("next");
+    if (nextIndex === 4) {
+        nextIndex = -1
+     }
     nextIndex++;
 
     listAlbum[nextIndex].classList.add("next");
     btnTop.classList.remove("hidden");
-    if (nextIndex === listAlbum.length -1 ) {
-        btnBottom.classList.add("hidden");
+    // if (nextIndex === listAlbum.length -1 ) {
+    //     btnBottom.classList.add("hidden");
        
-    }else if (nextIndex <= listAlbum.length -1) {
-        listAlbum[nextIndex].classList.add("next");
-    };
-
+    // } 
+   
 });
 
 btnTop.addEventListener("click", function () {
 
     listAlbum[nextIndex].classList.remove("next")
+    if (nextIndex === 0) {
+        nextIndex = 5
+     }
     nextIndex--;
 
     listAlbum[nextIndex].classList.add("next");
     btnBottom.classList.remove("hidden");
-    if (nextIndex === listAlbum.length -1 ) {
-        btnBottom.classList.add("hidden");
+    // if (nextIndex === listAlbum.length -1 ) {
+    //     btnBottom.classList.add("hidden");
        
-    };
+    // };
 
 })
