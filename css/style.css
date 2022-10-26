@@ -28,6 +28,9 @@ img{
     height: 100%;  
     display: none;
 }
+.next{
+    display: block;
+}
 .btn{
     padding: .4rem;
     font-size: 2rem;
