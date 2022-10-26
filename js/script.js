@@ -9,5 +9,7 @@ for (let i = 0; i < arrImg.length; i++) {
     eleImg.src = arrImg[i];
     eleImg.classList.add("foto");
     album.append(eleImg);
-    
+    if (i === 0) {
+        eleImg.classList.add("next");
+    }
 }
