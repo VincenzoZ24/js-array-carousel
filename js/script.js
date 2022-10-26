@@ -30,6 +30,8 @@ btnBottom.addEventListener("click", function () {
     if (nextIndex === listAlbum.length -1 ) {
         btnBottom.classList.add("hidden");
        
+    }else if (nextIndex <= listAlbum.length -1) {
+        listAlbum[nextIndex].classList.add("next");
     };
 
 });
