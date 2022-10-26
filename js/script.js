@@ -20,6 +20,7 @@ let nextIndex = 0;
 
 
 btnBottom.addEventListener("click", function () {
+   
 
     listAlbum[nextIndex].classList.remove("next")
     nextIndex++;
